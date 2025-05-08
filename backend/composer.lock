@@ -1,0 +1,913 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "3cbc20f3e72b03bce830a03f7ec09e18",
+    "packages": [
+        {
+            "name": "google/common-protos",
+            "version": "4.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/googleapis/common-protos-php.git",
+                "reference": "96f6873c65fb0289fcdb6ac3d5239f9c9e5750b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/googleapis/common-protos-php/zipball/96f6873c65fb0289fcdb6ac3d5239f9c9e5750b0",
+                "reference": "96f6873c65fb0289fcdb6ac3d5239f9c9e5750b0",
+                "shasum": ""
+            },
+            "require": {
+                "google/protobuf": "^v3.25.3||^4.26.1",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.6"
+            },
+            "type": "library",
+            "extra": {
+                "component": {
+                    "id": "common-protos",
+                    "path": "CommonProtos",
+                    "entry": "README.md",
+                    "target": "googleapis/common-protos-php.git"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Google\\Api\\": "src/Api",
+                    "Google\\Iam\\": "src/Iam",
+                    "Google\\Rpc\\": "src/Rpc",
+                    "Google\\Type\\": "src/Type",
+                    "Google\\Cloud\\": "src/Cloud",
+                    "GPBMetadata\\Google\\Api\\": "metadata/Api",
+                    "GPBMetadata\\Google\\Iam\\": "metadata/Iam",
+                    "GPBMetadata\\Google\\Rpc\\": "metadata/Rpc",
+                    "GPBMetadata\\Google\\Type\\": "metadata/Type",
+                    "GPBMetadata\\Google\\Cloud\\": "metadata/Cloud",
+                    "GPBMetadata\\Google\\Logging\\": "metadata/Logging"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Google API Common Protos for PHP",
+            "homepage": "https://github.com/googleapis/common-protos-php",
+            "keywords": [
+                "google"
+            ],
+            "support": {
+                "source": "https://github.com/googleapis/common-protos-php/tree/v4.12.0"
+            },
+            "time": "2025-04-18T20:49:28+00:00"
+        },
+        {
+            "name": "google/protobuf",
+            "version": "v4.30.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/protocolbuffers/protobuf-php.git",
+                "reference": "a4c4d8565b40b9f76debc9dfeb221412eacb8ced"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/protocolbuffers/protobuf-php/zipball/a4c4d8565b40b9f76debc9dfeb221412eacb8ced",
+                "reference": "a4c4d8565b40b9f76debc9dfeb221412eacb8ced",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=5.0.0"
+            },
+            "suggest": {
+                "ext-bcmath": "Need to support JSON deserialization"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Google\\Protobuf\\": "src/Google/Protobuf",
+                    "GPBMetadata\\Google\\Protobuf\\": "src/GPBMetadata/Google/Protobuf"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "proto library for PHP",
+            "homepage": "https://developers.google.com/protocol-buffers/",
+            "keywords": [
+                "proto"
+            ],
+            "support": {
+                "source": "https://github.com/protocolbuffers/protobuf-php/tree/v4.30.2"
+            },
+            "time": "2025-03-26T18:01:50+00:00"
+        },
+        {
+            "name": "grpc/grpc",
+            "version": "1.57.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/grpc/grpc-php.git",
+                "reference": "b610c42022ed3a22f831439cb93802f2a4502fdf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/grpc/grpc-php/zipball/b610c42022ed3a22f831439cb93802f2a4502fdf",
+                "reference": "b610c42022ed3a22f831439cb93802f2a4502fdf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "google/auth": "^v1.3.0"
+            },
+            "suggest": {
+                "ext-protobuf": "For better performance, install the protobuf C extension.",
+                "google/protobuf": "To get started using grpc quickly, install the native protobuf library."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Grpc\\": "src/lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "gRPC library for PHP",
+            "homepage": "https://grpc.io",
+            "keywords": [
+                "rpc"
+            ],
+            "support": {
+                "source": "https://github.com/grpc/grpc-php/tree/v1.57.0"
+            },
+            "time": "2023-08-14T23:57:54+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/c71ecc56dfe541dbd90c5360474fbc405f8d5963",
+                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container/tree/2.0.2"
+            },
+            "time": "2021-11-05T16:47:00+00:00"
+        },
+        {
+            "name": "psr/event-dispatcher",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/event-dispatcher.git",
+                "reference": "dbefd12671e8a14ec7f180cab83036ed26714bb0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/event-dispatcher/zipball/dbefd12671e8a14ec7f180cab83036ed26714bb0",
+                "reference": "dbefd12671e8a14ec7f180cab83036ed26714bb0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\EventDispatcher\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Standard interfaces for event handling.",
+            "keywords": [
+                "events",
+                "psr",
+                "psr-14"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/event-dispatcher/issues",
+                "source": "https://github.com/php-fig/event-dispatcher/tree/1.0.0"
+            },
+            "time": "2019-01-08T18:20:26+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "f16e1d5863e37f8d8c2a01719f5b34baa2b714d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/f16e1d5863e37f8d8c2a01719f5b34baa2b714d3",
+                "reference": "f16e1d5863e37f8d8c2a01719f5b34baa2b714d3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/3.0.2"
+            },
+            "time": "2024-09-11T13:17:53+00:00"
+        },
+        {
+            "name": "spiral/core",
+            "version": "3.15.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spiral/core.git",
+                "reference": "e6b06d6c1e88139fd66463ce842ccdc5c204fc16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spiral/core/zipball/e6b06d6c1e88139fd66463ce842ccdc5c204fc16",
+                "reference": "e6b06d6c1e88139fd66463ce842ccdc5c204fc16",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "psr/container": "^1.1|^2.0",
+                "spiral/security": "^3.15.8"
+            },
+            "provide": {
+                "psr/container-implementation": "^1.1|^2.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.6.12",
+                "phpunit/phpunit": "^10.5.41",
+                "vimeo/psalm": "^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.15.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spiral\\Core\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anton Titov (wolfy-j)",
+                    "email": "wolfy-j@spiralscout.com"
+                },
+                {
+                    "name": "Pavel Butchnev (butschster)",
+                    "email": "pavel.buchnev@spiralscout.com"
+                },
+                {
+                    "name": "Aleksei Gagarin (roxblnfk)",
+                    "email": "alexey.gagarin@spiralscout.com"
+                },
+                {
+                    "name": "Maksim Smakouz (msmakouz)",
+                    "email": "maksim.smakouz@spiralscout.com"
+                }
+            ],
+            "description": "IoC container, IoC scopes, factory, memory, configuration interfaces",
+            "homepage": "https://spiral.dev",
+            "support": {
+                "issues": "https://github.com/spiral/framework/issues",
+                "source": "https://github.com/spiral/core"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/spiral",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-04-22T14:03:55+00:00"
+        },
+        {
+            "name": "spiral/grpc-client",
+            "version": "1.0.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spiral/grpc-client.git",
+                "reference": "1525a0987f7f62919de73e09f38476f4366ef129"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spiral/grpc-client/zipball/1525a0987f7f62919de73e09f38476f4366ef129",
+                "reference": "1525a0987f7f62919de73e09f38476f4366ef129",
+                "shasum": ""
+            },
+            "require": {
+                "google/common-protos": "^1.3 || ^2.0 || ^3.0 || ^4.0",
+                "google/protobuf": "^3 || ^4",
+                "grpc/grpc": "^1.57",
+                "php": ">=8.1",
+                "psr/container": "^2.0",
+                "spiral/core": "^3.14",
+                "spiral/hmvc": "^3.14",
+                "spiral/tokenizer": "^3.13"
+            },
+            "require-dev": {
+                "buggregator/trap": "^1.11.1",
+                "ergebnis/phpunit-slow-test-detector": "^2.17",
+                "friendsofphp/php-cs-fixer": "^3.65",
+                "internal/dload": "^1.0.0",
+                "pestphp/pest": "^2.36",
+                "phpunit/phpunit": "^10.5.36",
+                "spiral/boot": "^3.14.7",
+                "spiral/code-style": "^2.2.1",
+                "vimeo/psalm": "^5.26.1"
+            },
+            "suggest": {
+                "ext-grpc": "Required to execute gRPC calls"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/stub.php"
+                ],
+                "psr-4": {
+                    "Spiral\\Grpc\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anton Titov (wolfy-j)",
+                    "email": "wolfy-j@spiralscout.com"
+                },
+                {
+                    "name": "Pavel Butchnev (butschster)",
+                    "email": "pavel.buchnev@spiralscout.com"
+                },
+                {
+                    "name": "Aleksei Gagarin (roxblnfk)",
+                    "email": "alexey.gagarin@spiralscout.com"
+                },
+                {
+                    "name": "Maksim Smakouz (msmakouz)",
+                    "email": "maksim.smakouz@spiralscout.com"
+                }
+            ],
+            "description": "gRPC client",
+            "homepage": "https://spiral.dev",
+            "support": {
+                "chat": "https://discord.gg/V6EK4he",
+                "docs": "https://spiral.dev/docs",
+                "issues": "https://github.com/spiral/grpc-client/issues",
+                "source": "https://github.com/spiral/grpc-client"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/spiral",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-12-11T08:47:48+00:00"
+        },
+        {
+            "name": "spiral/hmvc",
+            "version": "3.15.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spiral/hmvc.git",
+                "reference": "533b441af0fa4bcf8fda2c763207b4bf52e34e40"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spiral/hmvc/zipball/533b441af0fa4bcf8fda2c763207b4bf52e34e40",
+                "reference": "533b441af0fa4bcf8fda2c763207b4bf52e34e40",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "psr/event-dispatcher": "^1.0",
+                "spiral/core": "^3.15.8",
+                "spiral/interceptors": "^3.15.8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.5.41",
+                "spiral/testing": "^2.8.3",
+                "vimeo/psalm": "^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.15.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spiral\\Core\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anton Titov (wolfy-j)",
+                    "email": "wolfy-j@spiralscout.com"
+                },
+                {
+                    "name": "Pavel Butchnev (butschster)",
+                    "email": "pavel.buchnev@spiralscout.com"
+                },
+                {
+                    "name": "Aleksei Gagarin (roxblnfk)",
+                    "email": "alexey.gagarin@spiralscout.com"
+                },
+                {
+                    "name": "Maksim Smakouz (msmakouz)",
+                    "email": "maksim.smakouz@spiralscout.com"
+                }
+            ],
+            "description": "HMVC Core and Controllers",
+            "homepage": "https://spiral.dev",
+            "support": {
+                "chat": "https://discord.gg/V6EK4he",
+                "docs": "https://spiral.dev/docs",
+                "issues": "https://github.com/spiral/framework/issues",
+                "source": "https://github.com/spiral/hmvc"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/spiral",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-04-22T14:03:19+00:00"
+        },
+        {
+            "name": "spiral/interceptors",
+            "version": "3.15.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spiral/interceptors.git",
+                "reference": "511da02bb400c64dde27bb87b63df6d7007bceef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spiral/interceptors/zipball/511da02bb400c64dde27bb87b63df6d7007bceef",
+                "reference": "511da02bb400c64dde27bb87b63df6d7007bceef",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "psr/event-dispatcher": "^1.0",
+                "spiral/core": "^3.15.8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.5.41",
+                "spiral/testing": "^2.8.3",
+                "vimeo/psalm": "^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.15.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spiral\\Interceptors\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anton Titov (wolfy-j)",
+                    "email": "wolfy-j@spiralscout.com"
+                },
+                {
+                    "name": "Pavel Butchnev (butschster)",
+                    "email": "pavel.buchnev@spiralscout.com"
+                },
+                {
+                    "name": "Aleksei Gagarin (roxblnfk)",
+                    "email": "alexey.gagarin@spiralscout.com"
+                },
+                {
+                    "name": "Maksim Smakouz (msmakouz)",
+                    "email": "maksim.smakouz@spiralscout.com"
+                }
+            ],
+            "description": "Spiral Interceptors",
+            "homepage": "https://spiral.dev",
+            "keywords": [
+                "aop",
+                "interceptors",
+                "spiral"
+            ],
+            "support": {
+                "chat": "https://discord.gg/V6EK4he",
+                "docs": "https://spiral.dev/docs",
+                "issues": "https://github.com/spiral/framework/issues",
+                "source": "https://github.com/spiral/interceptors"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/spiral",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-04-22T14:03:19+00:00"
+        },
+        {
+            "name": "spiral/logger",
+            "version": "3.15.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spiral/logger.git",
+                "reference": "35553e8badee07dbb8290a7b73aa416c78e4c390"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spiral/logger/zipball/35553e8badee07dbb8290a7b73aa416c78e4c390",
+                "reference": "35553e8badee07dbb8290a7b73aa416c78e4c390",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "psr/log": "1 - 3",
+                "spiral/core": "^3.15.8"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.6.12",
+                "phpunit/phpunit": "^10.5.41",
+                "vimeo/psalm": "^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.15.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spiral\\Logger\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anton Titov (wolfy-j)",
+                    "email": "wolfy-j@spiralscout.com"
+                },
+                {
+                    "name": "Pavel Butchnev (butschster)",
+                    "email": "pavel.buchnev@spiralscout.com"
+                },
+                {
+                    "name": "Aleksei Gagarin (roxblnfk)",
+                    "email": "alexey.gagarin@spiralscout.com"
+                },
+                {
+                    "name": "Maksim Smakouz (msmakouz)",
+                    "email": "maksim.smakouz@spiralscout.com"
+                }
+            ],
+            "description": "LogFactory and global log listeners",
+            "homepage": "https://spiral.dev",
+            "support": {
+                "issues": "https://github.com/spiral/framework/issues",
+                "source": "https://github.com/spiral/logger"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/spiral",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-04-22T14:03:39+00:00"
+        },
+        {
+            "name": "spiral/security",
+            "version": "3.15.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spiral/security.git",
+                "reference": "a7a7a83cb474f70c02ffd00899f9f87b1d5c1d0e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spiral/security/zipball/a7a7a83cb474f70c02ffd00899f9f87b1d5c1d0e",
+                "reference": "a7a7a83cb474f70c02ffd00899f9f87b1d5c1d0e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "spiral/core": "^3.15.8",
+                "spiral/hmvc": "^3.15.8"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.6.12",
+                "phpunit/phpunit": "^10.5.41",
+                "spiral/console": "^3.15.8",
+                "vimeo/psalm": "^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.15.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spiral\\Security\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anton Titov (wolfy-j)",
+                    "email": "wolfy-j@spiralscout.com"
+                },
+                {
+                    "name": "Pavel Butchnev (butschster)",
+                    "email": "pavel.buchnev@spiralscout.com"
+                },
+                {
+                    "name": "Aleksei Gagarin (roxblnfk)",
+                    "email": "alexey.gagarin@spiralscout.com"
+                },
+                {
+                    "name": "Maksim Smakouz (msmakouz)",
+                    "email": "maksim.smakouz@spiralscout.com"
+                }
+            ],
+            "description": "Spiral, RBAC security layer",
+            "homepage": "https://spiral.dev",
+            "support": {
+                "issues": "https://github.com/spiral/framework/issues",
+                "source": "https://github.com/spiral/security"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/spiral",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-04-22T14:03:55+00:00"
+        },
+        {
+            "name": "spiral/tokenizer",
+            "version": "3.15.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spiral/tokenizer.git",
+                "reference": "0e1141ec8e92a55199a2e705f122b91c5964c42f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spiral/tokenizer/zipball/0e1141ec8e92a55199a2e705f122b91c5964c42f",
+                "reference": "0e1141ec8e92a55199a2e705f122b91c5964c42f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=8.1",
+                "spiral/core": "^3.15.8",
+                "spiral/logger": "^3.15.8",
+                "symfony/finder": "^5.4.45 || ^6.4.17 || ^7.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.6.12",
+                "phpunit/phpunit": "^10.5.41",
+                "spiral/attributes": "^2.8|^3.0",
+                "spiral/boot": "^3.15.8",
+                "spiral/files": "^3.15.8",
+                "vimeo/psalm": "^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.15.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spiral\\Tokenizer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anton Titov (wolfy-j)",
+                    "email": "wolfy-j@spiralscout.com"
+                },
+                {
+                    "name": "Pavel Butchnev (butschster)",
+                    "email": "pavel.buchnev@spiralscout.com"
+                },
+                {
+                    "name": "Aleksei Gagarin (roxblnfk)",
+                    "email": "alexey.gagarin@spiralscout.com"
+                },
+                {
+                    "name": "Maksim Smakouz (msmakouz)",
+                    "email": "maksim.smakouz@spiralscout.com"
+                }
+            ],
+            "description": "Static Analysis: Class and Invocation locators",
+            "homepage": "https://spiral.dev",
+            "support": {
+                "issues": "https://github.com/spiral/framework/issues",
+                "source": "https://github.com/spiral/tokenizer"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/spiral",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-04-22T14:05:18+00:00"
+        },
+        {
+            "name": "symfony/finder",
+            "version": "v7.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/finder.git",
+                "reference": "87a71856f2f56e4100373e92529eed3171695cfb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/87a71856f2f56e4100373e92529eed3171695cfb",
+                "reference": "87a71856f2f56e4100373e92529eed3171695cfb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2"
+            },
+            "require-dev": {
+                "symfony/filesystem": "^6.4|^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Finder\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Finds files and directories via an intuitive fluent interface",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/finder/tree/v7.2.2"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-12-30T19:00:17+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {},
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}

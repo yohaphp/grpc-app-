@@ -1,0 +1,26 @@
+{
+    "name": "yohacodes/backend",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "description": "Backend for yohacodes",
+    "type": "project",
+    "license": "MIT",
+    "keywords": [
+        "backend",
+        "yohacodes"
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "yohacode",
+            "email": "johnpro3269@gmail.com"
+        }
+    ],
+    "require": {
+        "spiral/grpc-client": "1.0.0-rc1"
+    }
+}
