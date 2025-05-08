@@ -1,7 +1,0 @@
-{
-    "require": {
-        "spiral/php-grpc": "^1.6",
-        "spiral/roadrunner": "^1.9",
-        "spiral/roadrunner-grpc": "^1.5"
-    }
-}
