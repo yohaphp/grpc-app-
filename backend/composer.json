@@ -21,9 +21,8 @@
         }
     ],
     "require": {
-        "php": "^7.3",
         "google/protobuf": "^3.6.0",
         "spiral/roadrunner": "^1.2.0",
-        "spiral/php-grpc": "^1.57.0"
+        "grpc/grpc": "^1.57.0"
     }
 }
