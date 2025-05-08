@@ -10,7 +10,7 @@ $server = new Server();
 $server->registerService(EchoService::class, new EchoService());
 
 use Spiral\RoadRunner\Worker;
-use Spiral\RoadRunner\Environment;
+use Spiral\RoadRunner\Environment\Environment;
 
-$worker = Worker::create(Environment::fromGlobals());
+$worker = Worker::create(new Environment($_ENV));
 $server->serve($worker);

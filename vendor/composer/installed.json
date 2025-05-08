@@ -529,6 +529,66 @@
             "install-path": "../spiral/roadrunner"
         },
         {
+            "name": "spiral/roadrunner-grpc",
+            "version": "v1.5.0",
+            "version_normalized": "1.5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spiral/roadrunner-grpc.git",
+                "reference": "b09bb8d6773098ed649ea296abea55b40beea909"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spiral/roadrunner-grpc/zipball/b09bb8d6773098ed649ea296abea55b40beea909",
+                "reference": "b09bb8d6773098ed649ea296abea55b40beea909",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "google/protobuf": "^3.7",
+                "php": ">=7.2",
+                "spiral/roadrunner": "^1.8",
+                "symfony/polyfill-php73": "^1.22",
+                "symfony/polyfill-php80": "^1.22"
+            },
+            "require-dev": {
+                "jetbrains/phpstorm-attributes": "^1.0",
+                "phpunit/phpunit": "^8.5|^9.0",
+                "spiral/code-style": "^1.0",
+                "symfony/var-dumper": ">=4.4",
+                "vimeo/psalm": "^4.6"
+            },
+            "time": "2021-03-31T14:09:02+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Spiral\\GRPC\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anton Titov / Wolfy-J",
+                    "email": "wolfy.jd@gmail.com"
+                }
+            ],
+            "description": "High-Performance GRPC server for PHP applications",
+            "support": {
+                "issues": "https://github.com/spiral/roadrunner-grpc/issues",
+                "source": "https://github.com/spiral/roadrunner-grpc/tree/v1.5.0"
+            },
+            "install-path": "../spiral/roadrunner-grpc"
+        },
+        {
             "name": "symfony/console",
             "version": "v5.4.47",
             "version_normalized": "5.4.47.0",

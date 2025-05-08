@@ -17,7 +17,7 @@ return array(
     'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
     'Spiral\\RoadRunner\\' => array($vendorDir . '/spiral/roadrunner/src'),
     'Spiral\\Goridge\\' => array($vendorDir . '/spiral/goridge/src'),
-    'Spiral\\GRPC\\' => array($vendorDir . '/spiral/php-grpc/src'),
+    'Spiral\\GRPC\\' => array($vendorDir . '/spiral/roadrunner-grpc/src', $vendorDir . '/spiral/php-grpc/src'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-factory/src', $vendorDir . '/psr/http-message/src'),
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
     'Laminas\\ZendFrameworkBridge\\' => array($vendorDir . '/laminas/laminas-zendframework-bridge/src'),
