@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { PingServiceClient } from './generated/PingServiceClientPb'; // removed .ts
+import { PingServiceClient } from './generated/PingServiceClientPb.ts'; // removed .ts
 import { PingRequest } from './generated/ping_pb'; // removed .d.ts
 
 import './App.css';
