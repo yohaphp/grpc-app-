@@ -3,14 +3,14 @@
 require 'vendor/autoload.php';
 
 use Spiral\GRPC\Server;
-use Spiral\GRPC\Context;
 use App\Grpc\EchoService;
+use Spiral\RoadRunner\Worker;
+use Ping\PingServiceInterface;
+use App\Grpc\EchoServiceInterface;
+use Ping\PingService;
 
 $server = new Server();
-$server->registerService(EchoService::class, new EchoService());
+$server->registerService(PingServiceInterface::class, new PingService());
 
-use Spiral\RoadRunner\Worker;
-use Spiral\RoadRunner\Environment\Environment;
-
-$worker = Worker::create(new Environment($_ENV));
+$worker = Worker::create();
 $server->serve($worker);

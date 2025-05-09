@@ -12,7 +12,7 @@ WORKDIR /app
 
 # Install Spiral gRPC
 COPY . /app
-RUN composer require spiral/php-grpc "^1.4"
+# RUN composer require spiral/php-grpc "^1.4"
 
 # Download and move protoc-gen-php-grpc
 RUN curl -L -o /usr/local/bin/protoc-gen-php-grpc https://github.com/spiral/php-grpc/releases/download/v1.4.0/protoc-gen-php-grpc-1.4.0-linux-amd64.tar.gz \
