@@ -48,6 +48,7 @@ class ComposerStaticInit87c36877605ddceadac6c079246962dc
         ),
         'G' => 
         array (
+            'Grpc\\' => 5,
             'Google\\Protobuf\\' => 16,
             'GPBMetadata\\Google\\Protobuf\\' => 28,
         ),
@@ -126,6 +127,10 @@ class ComposerStaticInit87c36877605ddceadac6c079246962dc
         'Laminas\\Diactoros\\' => 
         array (
             0 => __DIR__ . '/..' . '/laminas/laminas-diactoros/src',
+        ),
+        'Grpc\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/grpc/grpc/src/lib',
         ),
         'Google\\Protobuf\\' => 
         array (
