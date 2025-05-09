@@ -13,3 +13,12 @@ message PingRequest {
 message PingResponse {
   string message = 1;
 }
+message Timestamp {
+  int64 seconds = 1;
+  int32 nanos = 2;
+}
+
+message PingRequestWithTimestamp {
+  string message = 1;
+  Timestamp timestamp = 2;
+}
