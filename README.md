@@ -92,3 +92,5 @@ npm start
 
 ## 📄 License
 
+## gRPC ( Google Remote Procdure call  )
+* ***protoc --proto_path=. --php_out=./generated --php-grpc_out=./generated proto/echo.proto**

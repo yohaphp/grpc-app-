@@ -1,24 +1,32 @@
 FROM php:7.3-cli
 
-RUN apt-get update && apt-get install -y \
-    unzip git libprotobuf-dev protobuf-compiler curl \
-    && pecl install grpc \
-    && docker-php-ext-enable grpc
-
-# Install Composer
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
 WORKDIR /app
 
-# Install Spiral gRPC
+# Install required system packages and grpc extension
+RUN apt-get update && apt-get install -y \
+    unzip git libprotobuf-dev protobuf-compiler curl \
+    && pecl install grpc-1.38.0 \
+    && docker-php-ext-enable grpc \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Composer
+RUN curl -sS https://getcomposer.org/installer \
+    | php -- --install-dir=/usr/local/bin --filename=composer
+
+# Copy app files
 COPY . /app
-# RUN composer require spiral/php-grpc "^1.4"
 
-# Download and move protoc-gen-php-grpc
-RUN curl -L -o /usr/local/bin/protoc-gen-php-grpc https://github.com/spiral/php-grpc/releases/download/v1.4.0/protoc-gen-php-grpc-1.4.0-linux-amd64.tar.gz \
-    && tar -xzf /usr/local/bin/protoc-gen-php-grpc -C /usr/local/bin/ \
-    && chmod +x /usr/local/bin/protoc-gen-php-grpc
+# Install PHP dependencies
+RUN composer install --no-interaction --prefer-dist --optimize-autoloader
 
-EXPOSE 50051
+# Install RoadRunner manually
+RUN curl -L -o rr.tar.gz https://github.com/roadrunner-server/roadrunner/releases/download/v2023.3.4/roadrunner-linux-amd64.tar.gz \
+    && mkdir -p /usr/local/bin/rr-temp \
+    && tar -xzf rr.tar.gz -C /usr/local/bin/rr-temp \
+    && mv /usr/local/bin/rr-temp/roadrunner /usr/local/bin/rr \
+    && chmod +x /usr/local/bin/rr \
+    && rm -rf rr.tar.gz /usr/local/bin/rr-temp
 
+# Start the app
 CMD ["php", "server.php"]
+# CMD ["rr", "serve", "-c", ".rr.yaml"]
